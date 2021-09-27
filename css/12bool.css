@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 960px;
+    border: 1px solid blue;
+    min-height: 100px;
+    padding: 10px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* xs: 0-575px */
+.col-1{ flex-basis: calc((100% / 12)); max-width: calc(100% / 12);}
+.col-2{ flex-basis: calc((100% / 12) * 2); max-width: calc((100% / 12) * 2);}
+.col-3{ flex-basis: calc((100% / 12) * 3); max-width: calc((100% / 12) * 3);}
+.col-4{ flex-basis: calc((100% / 12) * 4); max-width: calc((100% / 12) * 4);}
+.col-5{ flex-basis: calc((100% / 12) * 5); max-width: calc((100% / 12) * 5);}
+.col-6{ flex-basis: calc((100% / 12) * 6); max-width: calc((100% / 12) * 6);}
+.col-7{ flex-basis: calc((100% / 12) * 7); max-width: calc((100% / 12) * 7);}
+.col-8{ flex-basis: calc((100% / 12) * 8); max-width: calc((100% / 12) * 8);}
+.col-9{ flex-basis: calc((100% / 12) * 9); max-width: calc((100% / 12) * 9);}
+.col-10{ flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+.col-11{ flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+.col-12{ flex-basis: 100%; max-width: 100%;}
+
+.col {flex-grow: 1; flex-basis: 0; max-width: 100%;}
+
+div[class*="col-"]{
+    border: 1px solid green;
+    min-height: 100px;
+}
+/* 
+sm: 576px-767px
+md: 768px-991px
+lg: 992px-n */ 
+
+@media screen and (min-width:576px) {}
+@media screen and (min-width:768px) {}
+@media screen and (min-width:992px) {}
